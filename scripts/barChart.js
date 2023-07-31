@@ -186,7 +186,7 @@ export async function toggleBarChartVisibility(hide){
 let nextPageButton = document.getElementById("next");
 nextPageButton?.addEventListener("click", async function() {
     // await toggleBarChartVisibility(true);
-    window.location='rent.html';
+    window.location='../views/rent.html';
 });
 
 await barChart()

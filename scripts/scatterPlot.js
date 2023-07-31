@@ -136,7 +136,7 @@ colButton?.addEventListener("click", async function() {
 
 let rentButton = document.getElementById("explore");
 rentButton?.addEventListener("click", async function() {
-    window.location="explore.html";
+    window.location="../views/explore.html";
 });
 
 await scatterPlot()
