@@ -1,0 +1,59 @@
+<html>
+<script src='https://d3js.org/d3.v5.min.js'></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3-annotation/2.5.1/d3-annotation.min.js"></script>
+<body>
+<link rel="stylesheet" type="text/css" href="/css/explore.css" />
+<h1 style="margin-left: 500px">Free Exploration: Salaries, Cost of Living and Rent
+</h1>
+<h3>Explore by selecting from the filter options below:</h3>
+
+<div>
+    <label for="types">Compare Salary Against:</label>
+    <select name="" id="types">
+        <option value="City">City</option>
+        <option value="Rent avg">Rent</option>
+        <option value="Cost of Living avg">Cost of Living</option>
+        <option value="Cost of Living Plus Rent avg">Cost of Living Plus Rent</option>
+    </select>
+    <br><br>
+    <label for="regions">Filter by Region:</label>
+    <label for="regions">Filter by Region:</label>
+    <select  name="" id="regions">
+        <option/>
+        <option value="West">West</option>
+        <option value="Midwest">Midwest</option>
+        <option value="Northeast">Northeast</option>
+        <option value="Southeast">Southeast</option>
+        <option value="Southwest">Southwest</option>
+        <option value="All Regions">All Regions</option>
+    </select>
+    <br><br>
+    <script id="#explore" type = "module" src="../scripts/explore.js" class="Explore"></script>
+    <div id="sorting">
+        <label for="sort">Sort by:</label>
+        <select name="" id="sort">
+            <option/>
+            <option value="Cost of Living Plus Rent avg">Cost of Living Plus Rent</option>
+            <option value="Mean Software Developer Salary (unadjusted)">Mean Salary</option>
+        </select>
+    </div>
+    <br>
+</div>
+Click Here to Go Back to The Home Page&nbsp<button  onclick="window.location='barChart.html';" value="click here">Start Over</button>
+<h3> Hover over the charts for more insights </h3>
+    <p>Salaries Color coded by Region:
+    <div><div class='box blue'></div>&nbspWest</div>
+    <br>
+    <div><div class='box red'></div>&nbspNortheast</div>
+    <br>
+    <div><div class='box green'></div>&nbspSouthwest</div>
+    <br>
+    <div><div class='box orange'></div>&nbspSoutheast</div>
+    <br>
+    <div><div class='box teal'></div>&nbspMidwest</div>
+    <br>
+<!--    <div class='box pink'></div>&nbspRent Plus Cost of Living</div>-->
+    </p>
+
+</body>
+</html>
