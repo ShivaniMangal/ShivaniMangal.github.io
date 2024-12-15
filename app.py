@@ -150,7 +150,8 @@ def main():
                     user_ratings[row['MovieID']] = ratings
 
     with st.expander("Step 2: Get Recommendations", expanded=False):   
-        none_count = sum(1 for value in user_ratings.values() if value is None)
+        none_count = sum(1 for value in user_ratings.values() if value is None or value == 0)
+
 
         if(none_count == 100):
             st.write("Please rate at least one movie...")
