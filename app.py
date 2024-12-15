@@ -3,7 +3,6 @@ import pandas as pd
 from pandas import NA
 from itertools import combinations
 import numpy as np
-import matplotlib.pyplot as plt
 from streamlit_star_rating import st_star_rating
 
 pd.options.mode.chained_assignment = None  # Disable SettingWithCopyWarning
