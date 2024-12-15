@@ -7,7 +7,7 @@ from streamlit_star_rating import st_star_rating
 
 pd.options.mode.chained_assignment = None  # Disable SettingWithCopyWarning
 
-from IPython.display import HTML
+
 
 # URLs for datasets and images
 movies_url = 'https://liangfgithub.github.io/MovieData/movies.dat?raw=true'
