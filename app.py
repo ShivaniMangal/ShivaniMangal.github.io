@@ -114,6 +114,8 @@ def main():
     st.set_page_config(layout="wide")
     st.title("Movie Recommendation App")
     user_ratings = {}
+    # Note that that System 1 popular_movies.csv has been pre-computed and stored in the backend to improve app speed.
+    # Implementation details are included in the HTML report file, submitted separately
     popular_movies = pd.read_csv("popular_movies.csv")
     
     popular_movies = popular_movies[popular_movies['MovieID'] < 3706]
